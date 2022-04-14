@@ -1,9 +1,11 @@
+import ExpenseDate from './ExpenseDate';
 import '../assets/css/ExpenseItem.css'
 
 function ExpenseItem({expense}) {
+ 
     return (
         <div className='expense-item'>
-          <div>{expense.date}</div>
+          <ExpenseDate date={expense.date}/>
           <div className='expense-item__description'>
             <h2>{expense.title}</h2>
             <div className='expense-item__price'>
